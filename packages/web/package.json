@@ -1,6 +1,6 @@
 {
   "name": "@opencvjs/web",
-  "version": "4.10.0-release.3",
+  "version": "4.10.0-release.4",
   "author": "ocavue <ocavue@gmail.com>",
   "repository": "https://github.com/ocavue/opencvjs",
   "type": "module",
