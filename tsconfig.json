@@ -1,19 +1,16 @@
 {
-    "compilerOptions": {
-        "skipLibCheck": false,
-        "target": "es2022",
-        "moduleDetection": "force",
-        "moduleResolution": "Bundler",
-        "isolatedModules": true,
-        "verbatimModuleSyntax": true,
-        "strict": true,
-        "noUncheckedIndexedAccess": true,
-        "noImplicitOverride": true,
-        "module": "ESNext",
-        "noEmit": true,
-        "lib": [
-            "es2022",
-            "DOM"
-        ]
-    }
+  "compilerOptions": {
+    "skipLibCheck": false,
+    "target": "es2022",
+    "moduleDetection": "force",
+    "moduleResolution": "Bundler",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "module": "ESNext",
+    "noEmit": true,
+    "lib": ["es2022", "DOM"]
+  }
 }
