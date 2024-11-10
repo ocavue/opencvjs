@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@opencvjs/node": "*",
-    "jimp": "^1.6.0"
+    "canvas": "^2.11.2",
+    "jsdom": "^25.0.1"
   }
 }
