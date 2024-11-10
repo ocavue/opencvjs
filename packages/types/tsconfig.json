@@ -1,15 +1,3 @@
 {
-  "compilerOptions": {
-    "skipLibCheck": false,
-    "target": "es2022",
-    "moduleDetection": "force",
-    "isolatedModules": true,
-    "verbatimModuleSyntax": true,
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-    "module": "ESNext",
-    "noEmit": true,
-    "lib": ["es2022", "DOM"]
-  }
+  "extends": "../../tsconfig.json"
 }

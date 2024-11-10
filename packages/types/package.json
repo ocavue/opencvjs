@@ -2,7 +2,6 @@
   "name": "@opencvjs/types",
   "version": "4.10.0-release.2",
   "author": "ocavue <ocavue@gmail.com>",
-  "packageManager": "pnpm@9.12.3",
   "repository": "https://github.com/ocavue/opencvjs",
   "scripts": {
     "lint": "tsc"

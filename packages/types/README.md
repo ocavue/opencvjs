@@ -16,7 +16,7 @@ import type { OpenCV } from "@opencvjs/types";
 
 ## Credits
 
-The definitions are based on the [@techstark/opencv-js](https://github.com/TechStark/opencv-js) and [mirada](https://github.com/cancerberoSgx/mirada) projects.
+TypeScript definitions are based on the [@techstark/opencv-js](https://github.com/TechStark/opencv-js) and [mirada](https://github.com/cancerberoSgx/mirada) projects.
 
 ## License
 
