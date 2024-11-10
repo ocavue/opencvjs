@@ -1,32 +1,30 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-</head>
+  <body>
+    <h1>OpenCV.js web worker example</h1>
+    <p>
+      Check <a href="https://github.com/ocavue/opencvjs">GitHub</a> for more
+      information.
+    </p>
 
-<body>
-  <h1>OpenCV.js web worker example</h1>
-  <p>
-    Check <a href="https://github.com/ocavue/opencvjs">GitHub</a> for more
-    information.
-  </p>
+    <div style="display: flex; flex-wrap: wrap">
+      <figure>
+        <img id="img_src" src="Lenna.jpg" width="256" height="256" />
+        <figcaption>The original image.</figcaption>
+      </figure>
 
-  <div style="display: flex; flex-wrap: wrap">
-    <figure>
-      <img id="img_src" src="Lenna.jpg" width="256" height="256" />
-      <figcaption>The original image.</figcaption>
-    </figure>
-
-    <figure>
-      <canvas id="img_dst" width="256" height="256"></canvas>
-      <figcaption>The grayscale image.</figcaption>
-    </figure>
-  </div>
-  <script type="module" src="/main.js"></script>
-</body>
-
+      <figure>
+        <canvas id="img_dst" width="256" height="256"></canvas>
+        <figcaption>The grayscale image.</figcaption>
+      </figure>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>

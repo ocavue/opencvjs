@@ -18,7 +18,7 @@ self.onmessage = async function (event) {
   const dstData = new ImageData(
     new Uint8ClampedArray(dst.data),
     srcData.width,
-    srcData.height
+    srcData.height,
   );
   console.log("After ImageData");
 
