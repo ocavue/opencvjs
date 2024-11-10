@@ -33,6 +33,15 @@ elif [ "${OPENCVJS_ENVIRONMENT}" = "worker" ]; then
         build_js_worker
     cd "${ROOT_DIR}"
     cp opencv_repo/build_js_worker/bin/opencv_js.js packages/worker/lib/opencv_js.js
+elif [ "${OPENCVJS_ENVIRONMENT}" = "node" ]; then
+    docker run --rm -v $(pwd):/src -u $(id -u):$(id -g) \
+        emscripten/emsdk:$EMSCRIPTEN_EMSDK_VERSION \
+        emcmake python3 ./platforms/js/build_js.py \
+        --clean_build_dir \
+        --build_flags='-s ENVIRONMENT=node -s MODULARIZE=1 ' \
+        build_js_node
+    cd "${ROOT_DIR}"
+    cp opencv_repo/build_js_node/bin/opencv_js.js packages/node/lib/opencv_js.js
 else
     echo "Invalid environment: ${OPENCVJS_ENVIRONMENT}"
     exit 1
