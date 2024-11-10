@@ -10,14 +10,24 @@ npm install @opencvjs/worker
 
 ## Usage
 
-`@opencvjs/worker` exports a `load` function that returns a Promise that resolves to the OpenCV.js API.
+`@opencvjs/worker` exports a `loadOpenCV` function that returns a Promise that resolves to the OpenCV.js API.
+
+```ts
+import { loadOpenCV } from "@opencvjs/worker";
+
+const cv = await loadOpenCV();
+const mat = new cv.Mat();
+```
 
 ## TypeScript
 
-`@opencvjs/worker` exports a type definition for the OpenCV.js API.
+`@opencvjs/worker` exports a type `OpenCV` for the OpenCV.js API.
 
 ```ts
-import type { OpenCV } from "@opencvjs/worker";
+import { loadOpenCV, type OpenCV } from "@opencvjs/worker";
+
+const cv: typeof OpenCV = await loadOpenCV();
+const mat: OpenCV.Mat = new cv.Mat();
 ```
 
 ## Example

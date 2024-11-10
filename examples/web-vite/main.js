@@ -1,8 +1,8 @@
-import { load } from "@opencvjs/web";
+import { loadOpenCV } from "@opencvjs/web";
 
 async function main() {
   // Wait for the OpenCV.js library to load
-  const cv = await load();
+  const cv = await loadOpenCV();
 
   const imgSrc = document.getElementById("img_src");
   const imgDst = document.getElementById("img_dst");
