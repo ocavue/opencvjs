@@ -5,3 +5,4 @@ A set of builds for [OpenCV.js](https://docs.opencv.org/4.x/d5/d10/tutorial_js_r
 ## Packages
 
 - [@opencvjs/types](./packages/types) - TypeScript definitions for OpenCV.js.
+- [@opencvjs/web](./packages/web) - OpenCV.js for browser.
