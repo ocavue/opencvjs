@@ -4,12 +4,12 @@ A collection of [OpenCV.js](https://docs.opencv.org/4.x/d5/d10/tutorial_js_root.
 
 ## Packages
 
-| Package              | Version             | Example                     |
-| -------------------- | ------------------- | --------------------------- |
-| [@opencvjs/web][]    | ![web-version][]    | [link][example-web-vite]    |
-| [@opencvjs/worker][] | ![worker-version][] | [link][example-worker-vite] |
-| [@opencvjs/node][]   | ![node-version][]   | [link][example-node]        |
-| [@opencvjs/types][]  | ![types-version][]  |                             |
+| Package              | Version             | Example                                                      |
+| -------------------- | ------------------- | ------------------------------------------------------------ |
+| [@opencvjs/web][]    | ![web-version][]    | [![Open in StackBlitz][stackblitz_svg]][example-web-vite]    |
+| [@opencvjs/worker][] | ![worker-version][] | [![Open in StackBlitz][stackblitz_svg]][example-worker-vite] |
+| [@opencvjs/node][]   | ![node-version][]   | [![Open in StackBlitz][stackblitz_svg]][example-node]        |
+| [@opencvjs/types][]  | ![types-version][]  |                                                              |
 
 <!-- GitHub Links -->
 
@@ -27,6 +27,7 @@ A collection of [OpenCV.js](https://docs.opencv.org/4.x/d5/d10/tutorial_js_root.
 
 <!-- Example Links -->
 
-[example-web-vite]: https://github.com/ocavue/opencvjs/tree/master/examples/web-vite
-[example-worker-vite]: https://github.com/ocavue/opencvjs/tree/master/examples/worker-vite
-[example-node]: https://github.com/ocavue/opencvjs/tree/master/examples/node
+[stackblitz_svg]: https://developer.stackblitz.com/img/open_in_stackblitz_small.svg
+[example-web-vite]: https://stackblitz.com/fork/github/ocavue/opencvjs/tree/master/examples/web-vite
+[example-worker-vite]: https://stackblitz.com/fork/github/ocavue/opencvjs/tree/master/examples/worker-vite
+[example-node]: https://stackblitz.com/fork/github/ocavue/opencvjs/tree/master/examples/node
