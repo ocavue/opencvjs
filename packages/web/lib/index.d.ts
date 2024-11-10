@@ -5,3 +5,5 @@ import type { OpenCV } from "@opencvjs/types";
  * OpenCV.js library.
  */
 export declare function load(): Promise<OpenCV>;
+
+export type { OpenCV };
