@@ -11,10 +11,10 @@ async function main() {
   await imgSrc.decode();
 
   // Read the image
-  let src = cv.imread(imgSrc);
+  const src = cv.imread(imgSrc);
 
   // Convert the image to grayscale
-  let dst = new cv.Mat();
+  const dst = new cv.Mat();
   cv.cvtColor(src, dst, cv.COLOR_RGBA2GRAY, 0);
 
   // Show the grayscale image
