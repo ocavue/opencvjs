@@ -4,5 +4,8 @@ A set of builds for [OpenCV.js](https://docs.opencv.org/4.x/d5/d10/tutorial_js_r
 
 ## Packages
 
-- [@opencvjs/types](./packages/types) - TypeScript definitions for OpenCV.js.
-- [@opencvjs/web](./packages/web) - OpenCV.js for browser.
+| Package                                                                            | Version                                               |
+| ---------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [@opencvjs/web](https://github.com/ocavue/opencvjs/tree/master/packages/web)       | ![npm](https://img.shields.io/npm/v/@opencvjs/web)    |
+| [@opencvjs/worker](https://github.com/ocavue/opencvjs/tree/master/packages/worker) | ![npm](https://img.shields.io/npm/v/@opencvjs/worker) |
+| [@opencvjs/types](https://github.com/ocavue/opencvjs/tree/master/packages/types)   | ![npm](https://img.shields.io/npm/v/@opencvjs/types)  |
