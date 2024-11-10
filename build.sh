@@ -16,6 +16,6 @@ git checkout ${OPENCV_VERSION}
 
 docker run --rm -v $(pwd):/src -u $(id -u):$(id -g) emscripten/emsdk:$EMSCRIPTEN_EMSDK_VERSION emcmake python3 ./platforms/js/build_js.py --clean_build_dir --build_flags='-s ENVIRONMENT=web -s EXPORT_ES6=1 -s MODULARIZE=1 ' build_js_web 
 
-cd $ROOT_DIR
-# cp build/opencv/build_js/bin/opencv_js.js dist/opencv-default.js
+cd "${ROOT_DIR}"
+cp opencv/build/opencv/build_js/bin/opencv_js.js packages/web/lib/opencv_js.js
 
