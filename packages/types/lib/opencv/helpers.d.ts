@@ -249,7 +249,7 @@ export declare const CV_64FC2: CVDataType;
 export declare const CV_64FC3: CVDataType;
 export declare const CV_64FC4: CVDataType;
 
-export type CVDataType = any;
+export type CVDataType = number;
 
 export declare function ellipse1(
   dst: Mat,
