@@ -2,7 +2,7 @@ import cv from "./opencv_js.js";
 
 let promise;
 
-export function load() {
+export function loadOpenCV() {
   if (!promise) {
     promise = cv();
   }

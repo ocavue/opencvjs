@@ -1,7 +1,7 @@
-import { load } from "@opencvjs/worker";
+import { loadOpenCV } from "@opencvjs/worker";
 
 self.onmessage = async function (event) {
-  const cv = await load();
+  const cv = await loadOpenCV();
 
   const srcData = event.data;
 
