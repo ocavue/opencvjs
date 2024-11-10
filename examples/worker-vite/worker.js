@@ -8,18 +8,23 @@ self.onmessage = async function (event) {
   let src = cv.matFromImageData(srcData);
 
   // Convert to grayscale
+  let tmp = new cv.Mat();
+  cv.cvtColor(src, tmp, cv.COLOR_RGBA2GRAY, 0);
   let dst = new cv.Mat();
-  cv.cvtColor(src, dst, cv.COLOR_RGBA2GRAY, 0);
+  cv.cvtColor(tmp, dst, cv.COLOR_GRAY2RGBA, 0);
 
   // Convert back to ImageData
+  console.log("Before ImageData");
   const dstData = new ImageData(
     new Uint8ClampedArray(dst.data),
     srcData.width,
     srcData.height
   );
+  console.log("After ImageData");
 
   // Clean up
   src.delete();
+  tmp.delete();
   dst.delete();
 
   // Send result back to main thread
