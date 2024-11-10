@@ -12,7 +12,7 @@ npm install @opencvjs/worker
 
 `@opencvjs/worker` exports a `loadOpenCV` function that returns a Promise that resolves to the OpenCV.js API.
 
-```ts
+```js
 import { loadOpenCV } from "@opencvjs/worker";
 
 const cv = await loadOpenCV();

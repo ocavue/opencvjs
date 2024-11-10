@@ -1,19 +1,19 @@
-# @opencvjs/web
+# @opencvjs/node
 
-[OpenCV.js](https://docs.opencv.org/4.x/d0/d84/tutorial_js_usage.html) for browser.
+[OpenCV.js](https://docs.opencv.org/4.x/d0/d84/tutorial_js_usage.html) for Node.js.
 
 ## Installation
 
 ```bash
-npm install @opencvjs/web
+npm install @opencvjs/node
 ```
 
 ## Usage
 
-`@opencvjs/web` exports a `loadOpenCV` function that returns a Promise that resolves to the OpenCV.js API.
+`@opencvjs/node` exports a `loadOpenCV` function that returns a Promise that resolves to the OpenCV.js API.
 
 ```js
-import { loadOpenCV } from "@opencvjs/web";
+const { loadOpenCV } = require("@opencvjs/node");
 
 const cv = await loadOpenCV();
 const mat = new cv.Mat();
@@ -21,10 +21,10 @@ const mat = new cv.Mat();
 
 ## TypeScript
 
-`@opencvjs/web` exports a type `OpenCV` for the OpenCV.js API.
+`@opencvjs/node` exports a type `OpenCV` for the OpenCV.js API.
 
 ```ts
-import { loadOpenCV, type OpenCV } from "@opencvjs/web";
+import { loadOpenCV, type OpenCV } from "@opencvjs/node";
 
 const cv: typeof OpenCV = await loadOpenCV();
 const mat: OpenCV.Mat = new cv.Mat();
