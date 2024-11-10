@@ -2,7 +2,7 @@ const cv = require("./opencv_js.js");
 
 let promise;
 
-async function loadOpenCV() {
+function loadOpenCV() {
   if (!promise) {
     promise = cv();
   }
