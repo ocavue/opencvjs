@@ -1,4 +1,5 @@
 opencv_repo/
+.DS_Store
 
 # Logs
 logs
