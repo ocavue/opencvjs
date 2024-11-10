@@ -1,0 +1,12 @@
+{
+  "name": "opencvjs-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "fix": "prettier --write .",
+    "lint": "pnpm run --filter ./packages/types lint && prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
