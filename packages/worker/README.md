@@ -20,6 +20,10 @@ npm install @opencvjs/worker
 import type { OpenCV } from "@opencvjs/worker";
 ```
 
+## Example
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/ocavue/opencvjs/tree/master/examples/worker-vite)
+
 ## Credits
 
 TypeScript definitions are based on the [@techstark/opencv-js](https://github.com/TechStark/opencv-js) and [mirada](https://github.com/cancerberoSgx/mirada) projects.
