@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/setup
+
+      - name: Lint
+        run: pnpm run lint
