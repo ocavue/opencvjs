@@ -5,12 +5,12 @@ self.onmessage = async function (event) {
 
   const srcData = event.data;
 
-  let src = cv.matFromImageData(srcData);
+  const src = cv.matFromImageData(srcData);
 
   // Convert to grayscale
-  let tmp = new cv.Mat();
+  const tmp = new cv.Mat();
   cv.cvtColor(src, tmp, cv.COLOR_RGBA2GRAY, 0);
-  let dst = new cv.Mat();
+  const dst = new cv.Mat();
   cv.cvtColor(tmp, dst, cv.COLOR_GRAY2RGBA, 0);
 
   // Convert back to ImageData

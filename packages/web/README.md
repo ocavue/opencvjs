@@ -12,7 +12,7 @@ npm install @opencvjs/web
 
 `@opencvjs/web` exports a `loadOpenCV` function that returns a Promise that resolves to the OpenCV.js API.
 
-```ts
+```js
 import { loadOpenCV } from "@opencvjs/web";
 
 const cv = await loadOpenCV();

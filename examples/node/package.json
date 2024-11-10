@@ -1,0 +1,14 @@
+{
+  "name": "opencvjs-example-node",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "private": true,
+  "scripts": {
+    "start": "node main.js"
+  },
+  "devDependencies": {
+    "@opencvjs/node": "*",
+    "canvas": "^2.11.2",
+    "jsdom": "^25.0.1"
+  }
+}
