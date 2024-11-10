@@ -1,5 +1,10 @@
 import cv from "./opencv_js.js";
 
+let promise;
+
 export function load() {
-  return cv();
+  if (!promise) {
+    promise = cv();
+  }
+  return promise;
 }
