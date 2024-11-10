@@ -24,8 +24,9 @@ const mat = new cv.Mat();
 `@opencvjs/web` exports a type `OpenCV` for the OpenCV.js API.
 
 ```ts
-import type { OpenCV } from "@opencvjs/web";
+import { loadOpenCV, type OpenCV } from "@opencvjs/web";
 
+const cv: typeof OpenCV = await loadOpenCV();
 const mat: OpenCV.Mat = new cv.Mat();
 ```
 
