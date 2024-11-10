@@ -1,5 +1,5 @@
-import cv from './opencv_js.js';
+import cv from "./opencv_js.js";
 
 export function load() {
-    return cv()
+  return cv();
 }
