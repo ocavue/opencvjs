@@ -145,7 +145,7 @@ export declare function setDelayFunction(...a: any[]): any;
 export declare class EmscriptenEmbindInstance {
   isAliasOf(other: any): bool;
   clone(): any;
-  delete(): any;
+  delete(): void;
   isDeleted(): boolean;
   deleteLater(): any;
 }
