@@ -26,7 +26,7 @@ describe("Mat", () => {
         new cv.Size(5, 5),
         0,
         0,
-        cv.BORDER_DEFAULT
+        cv.BORDER_DEFAULT,
       );
 
       const imgThresh = new cv.Mat();
@@ -35,7 +35,7 @@ describe("Mat", () => {
         imgThresh,
         0,
         255,
-        cv.THRESH_BINARY + cv.THRESH_OTSU
+        cv.THRESH_BINARY + cv.THRESH_OTSU,
       );
 
       const contours = new cv.MatVector();
@@ -46,7 +46,7 @@ describe("Mat", () => {
         contours,
         hierarchy,
         cv.RETR_CCOMP,
-        cv.CHAIN_APPROX_SIMPLE
+        cv.CHAIN_APPROX_SIMPLE,
       );
 
       const channels = new cv.MatVector();
