@@ -6,6 +6,7 @@
   "scripts": {
     "fix": "prettier --write .",
     "lint": "pnpm run --filter ./packages/types lint && prettier --check .",
+    "test": "pnpm -r run test",
     "build:web": "bash build.sh web",
     "build:worker": "bash build.sh worker",
     "build:node": "bash build.sh node",
