@@ -7,7 +7,6 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "strict": true,
-    "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "module": "ESNext",
     "noEmit": true,
