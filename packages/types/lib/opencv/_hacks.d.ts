@@ -2,9 +2,9 @@
 
 import { Algorithm } from "./Algorithm";
 import { RotatedRect } from "./RotatedRect";
-import type { NormTypes } from './core_array'
-import { Mat } from './Mat'
-import type { LineTypes } from './imgproc_draw'
+import type { NormTypes } from "./core_array";
+import { Mat } from "./Mat";
+import type { LineTypes } from "./imgproc_draw";
 
 export declare class Range {
   public start: number;
