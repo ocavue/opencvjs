@@ -2,7 +2,7 @@
   "name": "opencvjs-monorepo",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@10.22.0",
   "scripts": {
     "fix": "prettier --write .",
     "lint": "pnpm run --filter ./packages/types lint && prettier --check .",
@@ -13,6 +13,6 @@
     "ci:publish": "pnpm publish --access public -r --no-git-checks --tag latest"
   },
   "devDependencies": {
-    "prettier": "^3.3.3"
+    "prettier": "^3.6.2"
   }
 }
