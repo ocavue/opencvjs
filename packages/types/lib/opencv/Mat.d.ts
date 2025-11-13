@@ -1,27 +1,25 @@
 import type {
-  EmscriptenEmbindInstance,
-  InputArray,
-  MatSize,
-  OutputArray,
-  Point,
-  Rect,
-  Scalar,
-  Size,
-} from "./helpers";
-import type { MatExpr } from "./MatExpr";
-import { Matx } from "./Matx";
-import type {
   AccessFlag,
   bool,
   double,
+  EmscriptenEmbindInstance,
+  InputArray,
   int,
   MatAllocator,
   MatCommaInitializer_,
   MatConstIterator_,
+  MatExpr,
   MatIterator_,
+  MatSize,
   MatStep,
+  Matx,
+  OutputArray,
+  Point,
   Point3_,
   Point_,
+  Rect,
+  Scalar,
+  Size,
   size_t,
   typename,
   uchar,
@@ -29,7 +27,7 @@ import type {
   UMatData,
   UMatUsageFlags,
   Vec,
-} from "./missing";
+} from "./_types";
 
 /**
  * <a name="d3/d63/classcv_1_1Mat_1CVMat_Details"></a> The class [Mat](#d3/d63/classcv_1_1Mat})
@@ -1597,7 +1595,7 @@ export declare class Mat extends EmscriptenEmbindInstance {
 
   public updateContinuityFlag(): void;
 
-  public ucharPtr(i: any, j: any): any;
+  public ucharPtr(i: any, j?: any): any;
   public charPtr(i: any, j: any): any;
   public shortPtr(i: any, j: any): any;
   public ushortPtr(i: any, j: any): any;

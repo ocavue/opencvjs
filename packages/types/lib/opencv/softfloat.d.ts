@@ -1,11 +1,4 @@
-import type {
-  bool,
-  int,
-  int32_t,
-  int64_t,
-  uint32_t,
-  uint64_t,
-} from "./missing";
+import type { bool, int, int32_t, int64_t, uint32_t, uint64_t } from "./_types";
 
 export declare class softfloat {
   public v: uint32_t;

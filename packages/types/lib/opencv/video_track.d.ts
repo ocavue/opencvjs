@@ -1,14 +1,16 @@
-import type { bool, double, int } from "./missing";
-import {
+import type {
+  bool,
+  double,
   InputArray,
   InputOutputArray,
+  int,
+  Mat,
   OutputArray,
   OutputArrayOfArrays,
+  RotatedRect,
   Size,
   TermCriteria,
-} from "./helpers";
-import { Mat, RotatedRect } from "./_types";
-
+} from "./_types";
 /*
  * # Object Tracking
  *
