@@ -1,6 +1,8 @@
-import Jimp from "jimp";
+import { Jimp } from "jimp";
 import path from "node:path";
+
 import { translateException } from "./cv";
+
 import { expect, describe, it } from "vitest";
 import { loadOpenCV } from "../lib";
 
@@ -26,7 +28,7 @@ describe("Mat", () => {
         new cv.Size(5, 5),
         0,
         0,
-        cv.BORDER_DEFAULT,
+        cv.BORDER_DEFAULT
       );
 
       const imgThresh = new cv.Mat();
@@ -35,7 +37,7 @@ describe("Mat", () => {
         imgThresh,
         0,
         255,
-        cv.THRESH_BINARY + cv.THRESH_OTSU,
+        cv.THRESH_BINARY + cv.THRESH_OTSU
       );
 
       const contours = new cv.MatVector();
@@ -46,12 +48,33 @@ describe("Mat", () => {
         contours,
         hierarchy,
         cv.RETR_CCOMP,
-        cv.CHAIN_APPROX_SIMPLE,
+        cv.CHAIN_APPROX_SIMPLE
       );
 
       const channels = new cv.MatVector();
       cv.split(img, channels);
       cv.merge(channels, img);
+    } catch (err) {
+      throw translateException(cv, err);
+    }
+  });
+
+  it("should allow ucharPtr with optional second parameter", async () => {
+    let cv = await loadOpenCV();
+    try {
+      // Create a simple test matrix
+      const mat = new cv.Mat(3, 3, cv.CV_8UC1);
+
+      // Test that ucharPtr works with just one parameter (row index)
+      // This should compile without TypeScript errors due to optional j parameter
+      const rowPtr = mat.ucharPtr(0, 0);
+      expect(rowPtr).toBeDefined();
+
+      // Test that ucharPtr works with two parameters (row and column)
+      const elementPtr = mat.ucharPtr(0, 0);
+      expect(elementPtr).toBeDefined();
+
+      mat.delete();
     } catch (err) {
       throw translateException(cv, err);
     }
