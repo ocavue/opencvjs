@@ -1,8 +1,7 @@
-import type { Feature2D } from "./_types";
-import type { float, int } from "./missing";
+import type { Feature2D, float, int } from "./_types";
 
 /**
- * https://docs.opencv.org/4.10.0/db/d95/classcv_1_1ORB.html
+ * https://docs.opencv.org/4.12.0/db/d95/classcv_1_1ORB.html
  */
 export declare class ORB extends Feature2D {
   public constructor(

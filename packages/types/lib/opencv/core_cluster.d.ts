@@ -1,11 +1,12 @@
 import type {
+  double,
   InputArray,
   InputOutputArray,
+  int,
   OutputArray,
   TermCriteria,
-} from "./helpers";
-import type { double, int } from "./missing";
-
+  _EqPredicate,
+} from "./_types";
 /*
  * # Clustering
  *
@@ -76,5 +77,5 @@ export declare function partition(
   arg120: any,
   _vec: any,
   labels: any,
-  predicate?: any,
+  predicate?: _EqPredicate,
 ): any;

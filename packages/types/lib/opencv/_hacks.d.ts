@@ -1,12 +1,10 @@
-// Types for APIs defined in helpers.js
-// https://github.com/opencv/opencv/blob/4.10.0/modules/js/src/helpers.js#L29
+// Scalar, Point, Rect, etc are defined by opencv.js (helpers.js) and we need to declare them manually:
 
-import { RotatedRect } from "./RotatedRect";
 import { Algorithm } from "./Algorithm";
-import type { LineTypes } from "./imgproc_draw";
-import { Mat } from "./Mat";
-import type { NormTypes } from "./core_array";
-import type { bool, double } from "./missing";
+import { RotatedRect } from "./RotatedRect";
+import type { NormTypes } from './core_array'
+import { Mat } from './Mat'
+import type { LineTypes } from './imgproc_draw'
 
 export declare class Range {
   public start: number;
@@ -17,7 +15,6 @@ export declare class Range {
 export declare class Scalar extends Array<number> {
   public static all(...v: number[]): Scalar;
 }
-
 // Hack: expose Mat super classes like Mat_, InputArray, Vector, OutputArray we make them alias of Mat to simplify and make it work
 export { Mat as InputArray };
 export { Mat as InputOutputArray };
@@ -93,12 +90,12 @@ export declare class MinMaxLoc {
 export declare function exceptionFromPtr(err: number): any;
 export declare function onRuntimeInitialized(): any;
 export declare function FS_createDataFile(
-  arg0: string,
-  path: string,
+  parent: string,
+  name: string,
   data: Uint8Array,
-  arg3: boolean,
-  arg4: boolean,
-  arg5: boolean,
+  canRead: boolean,
+  canWrite: boolean,
+  canOwn: boolean,
 ): any;
 
 /**
@@ -145,7 +142,7 @@ export declare function setDelayFunction(...a: any[]): any;
 export declare class EmscriptenEmbindInstance {
   isAliasOf(other: any): bool;
   clone(): any;
-  delete(): void;
+  delete(): any;
   isDeleted(): boolean;
   deleteLater(): any;
 }
@@ -249,7 +246,7 @@ export declare const CV_64FC2: CVDataType;
 export declare const CV_64FC3: CVDataType;
 export declare const CV_64FC4: CVDataType;
 
-export type CVDataType = number;
+export type CVDataType = any;
 
 export declare function ellipse1(
   dst: Mat,
@@ -272,3 +269,62 @@ export declare function matFromArray(
   type: any,
   array: any,
 ): Mat;
+
+// Missing imports:
+export type Mat4 = any;
+export type Mat3 = any;
+export type Vec3 = any;
+export type float_type = any;
+export type int = number;
+export type bool = boolean;
+export type FileNode = any;
+export type FileStorage = any;
+export type Ptr = any;
+export type size_t = any;
+export type double = number;
+export type float = number;
+export type UMat = any;
+export type Matrix = any;
+export type BucketKey = any;
+export type Bucket = any;
+export type LshStats = any;
+export type MatAllocator = any;
+export type uchar = any;
+export type MatStep = any;
+export type UMatData = any;
+export type typename = any;
+export type Vec = any;
+export type Point_ = any;
+export type Point3_ = any;
+export type MatCommaInitializer_ = any;
+export type MatIterator_ = any;
+export type MatConstIterator_ = any;
+export type AccessFlag = any;
+export type UMatUsageFlags = any;
+export type _Tp = any;
+export type Matx_AddOp = any;
+export type Matx_SubOp = any;
+export type _T2 = any;
+export type Matx_ScaleOp = any;
+export type Matx_MulOp = any;
+export type Matx_DivOp = any;
+export type Matx_MatMulOp = any;
+export type Matx_TOp = any;
+export type diag_type = any;
+export type _EqPredicate = any;
+export type cvhalDFT = any;
+export type schar = any;
+export type ushort = any;
+export type short = any;
+export type int64 = any;
+export type ErrorCallback = any;
+export type unsigned = any;
+export type uint64 = any;
+export type float16_t = any;
+export type AsyncArray = any;
+export type Net = any;
+export type Moments = any;
+export type uint64_t = any;
+export type uint32_t = any;
+export type int32_t = any;
+export type int64_t = any;

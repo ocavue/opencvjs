@@ -1,6 +1,4 @@
-import type { Mat, MatExpr } from "./_types";
-import type { double, int } from "./missing";
-import type { Scalar, Size } from "./helpers";
+import type { double, int, Mat, MatExpr, Scalar, Size } from "./_types";
 
 export declare class MatOp {
   public constructor();

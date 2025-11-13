@@ -1,6 +1,4 @@
-import type { InputArray, OutputArray } from "./helpers";
-import type { double, int } from "./missing";
-
+import type { double, InputArray, int, OutputArray } from "./_types";
 /*
  * # Inpainting
  * the inpainting algorithm
