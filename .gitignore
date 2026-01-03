@@ -1,5 +1,6 @@
 opencv_repo/
 .DS_Store
+nohup.out
 
 # Logs
 logs
