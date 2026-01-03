@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-set -ex 
+set -ex
 
 EMSCRIPTEN_EMSDK_VERSION=3.1.74
 OPENCV_VERSION=4.13.0

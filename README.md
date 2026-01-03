@@ -18,14 +18,14 @@ Please check the links below for more details.
 When a new [OpenCV](https://github.com/opencv/opencv/releases) version drops, work through this checklist.
 
 1. Checkout to a branch.
-2. Set up a Linux machine with Docker installed. Builds are time-consuming; prefer high-performance hardware.
+2. Set up a Linux machine with Docker installed. Builds are time-consuming, so prefer high-performance hardware.
 3. Update the `OPENCV_VERSION` value in `build.sh` to match the upstream release.
 4. Build each target:
 
    ```bash
-   bash build.sh web
-   bash build.sh worker
-   bash build.sh node
+   ./build.sh web
+   ./build.sh worker
+   ./build.sh node
    ```
 
 5. Bump the `version` field in every `package.json` inside `packages`.
