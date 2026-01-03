@@ -13,12 +13,18 @@ Please check the links below for more details.
 | [@opencvjs/node][]   | ![node-version][]   | [![Open in StackBlitz][stackblitz_svg]][example-node]        |
 | [@opencvjs/types][]  | ![types-version][]  |                                                              |
 
-<!-- GitHub Links -->
+## Publish a new version
 
-[@opencvjs/web]: https://github.com/ocavue/opencvjs/tree/master/packages/web
-[@opencvjs/worker]: https://github.com/ocavue/opencvjs/tree/master/packages/worker
-[@opencvjs/node]: https://github.com/ocavue/opencvjs/tree/master/packages/node
-[@opencvjs/types]: https://github.com/ocavue/opencvjs/tree/master/packages/types
+1. Prepare a Linux environment with Docker installed. Since building is time consuming, it's recommended to use a powerful machine.
+2. Update the `OPENCV_VERSION` in the `build.sh` file to the new version.
+3. Run the following command to build the packages:
+```bash
+bash build.sh web
+bash build.sh worker
+bash build.sh node
+```
+4. Update `version` field in the all `package.json` files under the `packages` directory.
+5. Push the changes to the `master` branch. The CI will automatically publish the packages to the npm registry.
 
 <!-- Shields Links -->
 
