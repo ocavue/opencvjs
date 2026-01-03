@@ -13,7 +13,6 @@ Please check the links below for more details.
 | [@opencvjs/node][]   | ![node-version][]   | [![Open in StackBlitz][stackblitz_svg]][example-node]        |
 | [@opencvjs/types][]  | ![types-version][]  |                                                              |
 
-
 ## Build and Publish
 
 When a new [OpenCV](https://github.com/opencv/opencv/releases) version drops, work through this checklist.
@@ -22,15 +21,15 @@ When a new [OpenCV](https://github.com/opencv/opencv/releases) version drops, wo
 2. Set up a Linux machine with Docker installed. Builds are time-consuming; prefer high-performance hardware.
 3. Update the `OPENCV_VERSION` value in `build.sh` to match the upstream release.
 4. Build each target:
-   
+
    ```bash
    bash build.sh web
    bash build.sh worker
    bash build.sh node
    ```
 
-6. Bump the `version` field in every `package.json` inside `packages`.
-7. Push your branch and open a PR. Once it lands on `master`, CI publishes the packages to npm.
+5. Bump the `version` field in every `package.json` inside `packages`.
+6. Push your branch and open a PR. Once it lands on `master`, CI publishes the packages to npm.
 
 <!-- Shields Links -->
 
