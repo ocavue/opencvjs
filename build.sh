@@ -46,3 +46,12 @@ else
     echo "Invalid environment: ${OPENCVJS_ENVIRONMENT}"
     exit 1
 fi
+
+cd "${ROOT_DIR}"
+git add --all
+git commit -m "chore: auto commit by build.sh"
+
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "${CURRENT_BRANCH}" != "master" ]; then
+    git push origin "${CURRENT_BRANCH}"
+fi
