@@ -31,6 +31,13 @@ When a new [OpenCV](https://github.com/opencv/opencv/releases) version drops, wo
 5. Bump the `version` field in every `package.json` inside `packages`.
 6. Push your branch and open a PR. Once it lands on `master`, CI publishes the packages to npm.
 
+<!-- GitHub Links -->
+
+[@opencvjs/web]: https://github.com/ocavue/opencvjs/tree/master/packages/web
+[@opencvjs/worker]: https://github.com/ocavue/opencvjs/tree/master/packages/worker
+[@opencvjs/node]: https://github.com/ocavue/opencvjs/tree/master/packages/node
+[@opencvjs/types]: https://github.com/ocavue/opencvjs/tree/master/packages/types
+
 <!-- Shields Links -->
 
 [web-version]: https://img.shields.io/npm/v/@opencvjs/web
