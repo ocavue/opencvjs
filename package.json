@@ -14,5 +14,13 @@
   },
   "devDependencies": {
     "prettier": "^3.7.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "@opencvjs/web@*": "workspace:*",
+      "@opencvjs/node@*": "workspace:*",
+      "@opencvjs/worker@*": "workspace:*",
+      "@opencvjs/types@*": "workspace:*"
+    }
   }
 }
