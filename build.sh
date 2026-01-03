@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-set -ex 
+set -ex
 
 EMSCRIPTEN_EMSDK_VERSION=3.1.74
-OPENCV_VERSION=4.12.0
+OPENCV_VERSION=4.13.0
 OPENCVJS_ENVIRONMENT=$1
 
 cd $(dirname $0)
@@ -45,4 +45,13 @@ elif [ "${OPENCVJS_ENVIRONMENT}" = "node" ]; then
 else
     echo "Invalid environment: ${OPENCVJS_ENVIRONMENT}"
     exit 1
+fi
+
+cd "${ROOT_DIR}"
+git add --all
+git commit -m "chore: auto commit by build.sh" || true
+
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "${CURRENT_BRANCH}" != "master" ]; then
+    git push origin "${CURRENT_BRANCH}" || true
 fi
