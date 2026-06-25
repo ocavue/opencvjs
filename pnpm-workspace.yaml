@@ -1,3 +1,13 @@
 packages:
   - packages/*
   - examples/*
+
+allowBuilds:
+  canvas: false
+  esbuild: false
+
+"overrides":
+  "@opencvjs/web@*": "workspace:*"
+  "@opencvjs/node@*": "workspace:*"
+  "@opencvjs/worker@*": "workspace:*"
+  "@opencvjs/types@*": "workspace:*"
