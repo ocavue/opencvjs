@@ -9,9 +9,9 @@
   "types": "./lib/index.d.ts",
   "devDependencies": {
     "@types/node": "^24.10.1",
-    "jimp": "^1.6.0",
+    "jimp": "^1.6.1",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.16"
+    "vitest": "^4.1.9"
   },
   "dependencies": {
     "@opencvjs/types": "workspace:*"

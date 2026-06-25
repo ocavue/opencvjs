@@ -10,6 +10,6 @@
   },
   "devDependencies": {
     "@opencvjs/worker": "*",
-    "vite": "^7.3.0"
+    "vite": "^7.3.5"
   }
 }
