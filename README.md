@@ -1,6 +1,6 @@
 # opencvjs
 
-A collection of [OpenCV.js](https://docs.opencv.org/4.x/d5/d10/tutorial_js_root.html) builds for different environments, to reduce the bundle size and improve the compatibility.
+A collection of [OpenCV.js](https://docs.opencv.org/5.0/js_tutorials/js_tutorials.html) builds for different environments, to reduce the bundle size and improve the compatibility.
 
 Please check the links below for more details.
 
