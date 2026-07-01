@@ -36,7 +36,7 @@ importers:
         specifier: workspace:*
         version: link:../../packages/web
       vite:
-        specifier: ^8.0.0
+        specifier: ^8.0.16
         version: 8.1.0(@types/node@24.13.2)
 
   examples/worker-vite:
@@ -45,7 +45,7 @@ importers:
         specifier: workspace:*
         version: link:../../packages/worker
       vite:
-        specifier: ^8.0.0
+        specifier: ^8.0.16
         version: 8.1.0(@types/node@24.13.2)
 
   packages/node:
